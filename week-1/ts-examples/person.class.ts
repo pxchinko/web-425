@@ -1,3 +1,10 @@
+/*=======================================
+; Title: person.class.ts
+; Author: Sarah Massie
+; Date: 19 December 2020
+; Description: Simple Angular application creating a Person constructor object
+=======================================*/
+
 import { IPerson } from "./person.interface"
 
 class Person implements IPerson {
