@@ -13,24 +13,12 @@ export class Composer {
 
   constructor(  ) {
     this.composers = [
-      {
-        composerId: 100, fullName: "Pyotr Ilyich Tchaikovsky", genre: "Romantic"
-      },
-      {
-        composerId: 101, fullName: "Ludwig van Beethoven", genre: "Classical"
-      },
-      {
-        composerId: 102, fullName: "Johann Sebastian Bach", genre: "Classical"
-      },
-      {
-        composerId: 103, fullName: "Wolfgang Amadeus Mozart", genre: "Classical"
-      },
-      {
-        composerId: 104, fullName: "Johannes Brahms", genre: "Classical"
-      },
-      {
-        composerId: 105, fullName: "Joseph Haydn", genre: "Classical"
-      }
+      { composerId: 100, fullName: "Pyotr Ilyich Tchaikovsky", genre: "Romantic" },
+      { composerId: 101, fullName: "Ludwig van Beethoven", genre: "Classical" },
+      { composerId: 102, fullName: "Johann Sebastian Bach", genre: "Classical" },
+      { composerId: 103, fullName: "Wolfgang Amadeus Mozart", genre: "Classical" },
+      { composerId: 104, fullName: "Johannes Brahms", genre: "Classical" },
+      { composerId: 105, fullName: "Joseph Haydn", genre: "Classical" }
     ]
   }
 
@@ -41,7 +29,7 @@ export class Composer {
   // loop over composer list
   getComposer(composerId: number) {
     for (let composer of this.composers) {
-      // if ID is passed through list, return the composer w/ that ID
+      // checks if passed value is equivalent to a composer's ID
       if (composer.composerId === composerId) {
         return composer;
       }
