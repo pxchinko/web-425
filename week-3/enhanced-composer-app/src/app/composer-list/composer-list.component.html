@@ -1,7 +1,7 @@
 <!-- /**
  * Title: composer-list.component.html
  * Author: Sarah Massie
- * Date: 10 January 2021
+ * Date: 14 January 2021
  * Description: Composer list component
 */ -->
 
@@ -10,13 +10,23 @@
     <table class="table table-bordered table-fixed">
       <thead class="thead-dark">
         <tr>
+          <th scope="col" class="col-xs-3">Composer ID</th>
           <th scope="col" class="col-xs-6">Full name</th>
           <th scope="col" class="col-xs-3">Genre</th>
         </tr>
       </thead>
+      <!--
+        ; looping through the array of composers from the constructor object
+        ; output will show in multiple columns in bootstrap table
+      -->
       <tbody *ngFor="let composer of composers">
-        <tr scope="row">
-          <td class="col-xs-6">{{ composer.fullName }}</td>
+        <tr>
+          <td scope="row" class="col-xs-3">
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+              {{ composer.composerId  }}
+            </a>
+          </td>
+          <td scope="row" class="col-xs-6">{{ composer.fullName }}</td>
           <td class="col-xs-3">{{ composer.genre }}</td>
         </tr>
       </tbody>
