@@ -1,0 +1,12 @@
+/**
+ * Title: sign-in.component.css
+ * Author: Sarah Massie
+ * Date: 14 January 2021
+ * Description: CSS file for sign in component
+*/
+
+.signin-container {
+  width: 35%;
+  margin: 0 auto;
+  margin-top: 10%;
+}
