@@ -1,3 +1,10 @@
+/**
+ * Title: my-image.component.css
+ * Author: Sarah Massie
+ * Date: 14 January 2021
+ * Description: CSS file for my image component
+*/
+
 img {
   max-width: 200px;
 }
