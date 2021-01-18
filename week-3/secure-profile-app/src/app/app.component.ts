@@ -15,5 +15,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   isLoggedIn: Boolean = true;
 
-  assignment: string = 'Exercise 2.3 - Data Binding';
+  assignment: string = 'Exercise 3.3 - Passing Data Routes, Pt 2';
 }

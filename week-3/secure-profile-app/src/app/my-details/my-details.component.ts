@@ -31,6 +31,8 @@ export default class Person {
   templateUrl: './my-details.component.html',
   styleUrls: ['./my-details.component.css']
 })
+
+// creates a person's profile and parses it into a string
 export class MyDetailsComponent implements OnInit {
 
   myProfile: Person;

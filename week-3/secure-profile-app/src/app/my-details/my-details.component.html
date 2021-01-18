@@ -13,6 +13,7 @@
   <li class="list-group-item">Favorite Color: {{ myProfile.favoriteColor }}</li>
   <li class="list-group-item">
     Keywords:
+    <!-- loops through array to show keywords saved in person's details -->
     <span *ngFor="let word of myProfile.keywords">
       {{ word }}
     </span>
