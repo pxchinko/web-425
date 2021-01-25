@@ -1,0 +1,31 @@
+/**
+ * Title: composer-list.component.css
+ * Author: Sarah Massie
+ * Date: 10 January 2021
+ * Description: composer list page component css
+*/
+
+body{
+  background-color: #bdc3c7;
+}
+.table-fixed{
+  width: 100%;
+  background-color: #f3f3f3;
+  display:inline-table;
+  border-color: grey;
+}
+.table-fixed > tbody{
+  height:200px;
+  overflow-y:auto;
+  width: 100%;
+}
+thead > tr > th {
+  text-align: left;
+  background-color: #127bf3;
+  border-color:#2281e6;
+}
+.textSearch {
+  width: 30%;
+  float: right;
+  margin-bottom: 10px;
+}

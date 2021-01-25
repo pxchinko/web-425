@@ -1,0 +1,20 @@
+/**
+ * Title: about.component.css
+ * Author: Sarah Massie
+ * Date: 10 January 2021
+ * Description: About page component css
+*/
+
+body {
+  background-color: #B3E5FC;
+  border-radius: 10px
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #fff
+}
+img {
+  max-width: 200px;
+}

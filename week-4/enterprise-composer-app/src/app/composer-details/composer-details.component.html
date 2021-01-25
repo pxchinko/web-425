@@ -1,0 +1,19 @@
+<!-- /**
+ * Title: app.component.html
+ * Author: Sarah Massie
+ * Date: 14 January 2021
+ * Description: App component for main page
+*/ -->
+
+<div class="row">
+
+  <div class="col-sm-12">
+    <ul class="list-group">
+      <li class="list-group-item">Composer ID: {{ composer.composerId }}</li>
+      <li class="list-group-item">Full Name: {{ composer.fullName }}</li>
+      <li class="list-group-item">Genre: {{ composer.genre }}</li>
+    </ul>
+    <br />
+    <a routerLink="/composer-list" class="float-right">Return to List</a>
+  </div>
+</div>

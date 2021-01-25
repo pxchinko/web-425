@@ -1,0 +1,39 @@
+<!-- /**
+ * Title: composer-list.component.html
+ * Author: Sarah Massie
+ * Date: 14 January 2021
+ * Description: Composer list component
+*/ -->
+
+<div class="row">
+  <div class="col-sm-12">
+    <div class="textSearch">
+      <input type="text" id="textSearch" class="form-control" placeholder="Search by Name" [formControl]="textSearchControl" />
+    </div>
+    <table class="table table-bordered table-fixed">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" class="col-xs-3">Composer ID</th>
+          <th scope="col" class="col-xs-6">Full name</th>
+          <th scope="col" class="col-xs-3">Genre</th>
+        </tr>
+      </thead>
+      <!--
+        ; looping through the array of composers from the constructor object
+        ; output will show in multiple columns in bootstrap table
+        ; adding the async pipe
+      -->
+      <tbody *ngFor="let composer of composers | async">
+        <tr>
+          <td scope="row" class="col-xs-3">
+            <a routerLink="/composer-details/{{ composer.composerId }}">
+              {{ composer.composerId  }}
+            </a>
+          </td>
+          <td scope="row" class="col-xs-6">{{ composer.fullName }}</td>
+          <td class="col-xs-3">{{ composer.genre }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
