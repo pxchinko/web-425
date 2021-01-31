@@ -17,6 +17,6 @@ export class AppComponent {
   assignment: string;
 
   constructor() {
-    this.assignment = 'Exercise 5.2 - Navigation and Layout'
+    this.assignment = 'Assignment 5.24- Dialogs'
   }
 }
