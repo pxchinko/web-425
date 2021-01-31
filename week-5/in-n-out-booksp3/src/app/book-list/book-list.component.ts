@@ -17,6 +17,7 @@ import { BookDetailsDialogComponent } from '../book-details-dialog/book-details-
   templateUrl: './book-list.component.html',
   styleUrls: ['./book-list.component.css']
 })
+
 export class BookListComponent implements OnInit {
 
   books: Observable<IBook[]>;
@@ -30,6 +31,7 @@ export class BookListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // shows the book details when isbn is clicked on
   showBookDetails(isbn: string) {
     this.book = this.booksService.getBook(isbn);
 
