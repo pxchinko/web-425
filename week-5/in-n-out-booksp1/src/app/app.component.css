@@ -1,0 +1,17 @@
+/**
+ * Title: app.component.scss
+ * Author: Sarah Massie
+ * Date: 30 January 2021
+ * Description: Sass styling sheets
+*/
+
+.logo {
+  margin-top: 25px;
+}
+
+.main-container {
+  padding-top: 25px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 50px;
+}
