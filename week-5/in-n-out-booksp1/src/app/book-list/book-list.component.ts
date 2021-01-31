@@ -1,3 +1,10 @@
+/**
+ * Title: book-list.component.ts
+ * Author: Sarah Massie
+ * Date: 30 January 2021
+ * Description: App component for the book list page
+*/
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
