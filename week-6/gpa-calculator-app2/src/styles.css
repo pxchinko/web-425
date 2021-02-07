@@ -1,0 +1,12 @@
+/**
+ * Title: style.css
+ * Author: Sarah Massie
+ * Date: 6 February 2021
+ * Description: App styling sheets
+*/
+
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

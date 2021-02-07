@@ -1,0 +1,61 @@
+<!--
+ * Title: home.component.html
+ * Author: Sarah Massie
+ * Date: 6 February 2021
+ * Description: Home HTML component
+-->
+
+<div fxLayout="row wrap" fxLayoutGap="15px">
+  <div class="grade-form" fxFlex>
+    <mat-card class="mat-elevation-z4">
+
+      <mat-card-title>Grade Entry</mat-card-title>
+      <br />
+
+      <mat-card-content>
+        <form fxLayout="column" fxLayoutGap="16px">
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Course</mat-label>
+            <input type="text" name="txtCourse" id="txtCourse" matInput [(ngModel)]="transcriptEntry.course" />
+          </mat-form-field>
+
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Grade</mat-label>
+            <mat-select [(ngModel)]="transcriptEntry.grade" name="selectGrade">
+              <mat-option *ngFor="let grade of selectableGrades" [value]="grade">
+                {{ grade }}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+          <button mat-raised-button color="primary" (click)="saveEntry()">Save</button>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+
+  <div class="grade-summary" fxFlex>
+    <mat-card class="mat-elevation-z4">
+      <mat-card-title>Transcript</mat-card-title>
+      <mat-card-content>
+        <app-grade-summary *ngFor="let entry of transcriptEntries" [course]="entry.course" [grade]="entry.grade"></app-grade-summary>
+      </mat-card-content>
+    </mat-card>
+    <button mat-button color="secondary" (click)="clearEntries()" style="margin-top: 15px; float: right;">Clear Transcript</button>
+
+  </div>
+</div>
+
+<br /><br />
+
+<!-- calculate results to see GPA -->
+<div fxLayout="column" fxLayoutGap="20px">
+  <div fxFlex class="gpa">
+
+    <mat-card class="mat-elevation-z4">
+      <mat-card-title style="text-align: center;">
+        GPA: <app-gpa [gpaTotal]="gpaTotal"></app-gpa>
+      </mat-card-title>
+    </mat-card>
+    <button mat-raised-button color="primary" (click)="calculateResults()" style="margin-top: 15px; float:right">Calculate GPA</button>
+  </div>
+</div>
