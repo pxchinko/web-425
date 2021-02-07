@@ -1,0 +1,17 @@
+/**
+ * Title: base-layout.component.css
+ * Author: Sarah Massie
+ * Date: 6 February 2021
+ * Description: App styling sheets
+*/
+
+.logo > svg {
+  padding-left: 100px;
+  max-width: 80px;
+}
+
+.main-container {
+  width: 60%;
+  padding: 50px;
+  margin-left: 15%;
+}
